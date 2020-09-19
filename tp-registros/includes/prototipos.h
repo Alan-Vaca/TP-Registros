@@ -4,16 +4,13 @@
 void gotoxy();                                                                  ///GOTOXY
 void recuadro();                                                                ///CREA RECUADROS
 void ShowConsoleCursor();                                                       ///VISUALIZACION DEL CURSOR
+
+
 void MenuPrincipal();                                                           ///MENU PRINCIPAL
 void MenuUsuario();
-void menuEntrenamiento ();                                                             ///MENU DE USUARIO
-void CargaUsuario();                                                            ///CARGAR EL USUARIO
-int  Fechasverificador();                                                       ///FERIVICARA LA VALIDEZ DE LA FECHA
-void ListarUsuarios();                                                          ///LISTARA LOS USUARIOS
-int  BuscarId();                                                                ///BUSCARA LA ID DEL USUARIO
-void ListarId();                                                                ///LISTARA LA ID DEL USUARIO
+void menuEntrenamiento ();
 
-struct Usuario{                                                                 //ESTRUCTURA DE LOS USUARIOS
+ struct Usuario{                                                                ///ESTRUCTURA DE LOS USUARIOS
     int     Id;                                                                 ///DEBE SER UN NUMERO ENTERO POSITIVO Y UNICO (NO PUEDE REPETIRSE)
     char    Nombre[50];                                                         ///DEBE SER UNA CADENA QUE ADMITA ESPACIOS, QUE NO PUEDA SER VACIA
     char    Apellido[50];                                                       ///DEBE SER UNA CADENA QUE ADMITA ESPACIOS, QUE NO PUEDA SER VACIA
@@ -24,11 +21,34 @@ struct Usuario{                                                                 
     bool    AptoMedico;                                                         ///DEBE SER NUMEROS ENTEROS 1 o 0;
     bool    Estado;                                                             ///DENE SER VALOR BOOBEANO, (CUANDO SE CARGUE UN USUARIO DEBE SER TRUE)
 };
+Usuario CargarUsuario();
+void CargaUsuario();
+int  Fechasverificador();
+bool GuardarUsuarios(Usuario);
 
-Usuario CargarUsuario();                                                        ///CARGAR EL USUARIO
-void MostrarUsuario (Usuario);                                                  ///VISUALIZACION DE COMO SE VA A MOSTRAR
-bool GuardarUsuarios(Usuario);                                                  ///GUARDARA EL USUARIO REGISTRADO
-void ModificarUsuario();                                                        ///MODIFICAR EL USUARIO POR ID
+void ModificarUsuario();
 void BajaUsuario();
+
+void ListarUsuarios();
+int  BuscarId();
+void ListarId();
+void MostrarUsuario (Usuario);
+
+
+struct entrenamiento{
+    int     idEntrenamiento;
+    int     IDUsuario;
+    int     fechadeEntranmiento;
+    int     actividad;
+    float   calorias;
+    int     tiempo;
+};
+
+entrenamiento Cargarentrenamiento();
+void cargaEntrenamiento();
+int autonumerico();
+int fechasEnt(int dd, int mm, int aa);
+bool guardarEntrenamiento(entrenamiento)
+
 
 #endif // PROTOTIPOS_H_INCLUDED

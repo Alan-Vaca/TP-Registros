@@ -22,5 +22,6 @@ int main(){                                                                     
     recuadro(26,10,46,21);
     SetConsoleTextAttribute(hConsole, 7);
     MenuPrincipal();
+    //Cargarentrenamiento();
     return 0;
 }

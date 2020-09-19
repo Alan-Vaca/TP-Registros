@@ -290,24 +290,24 @@ void menuEntrenamiento(){                                                       
     case 13: //ENTER
         switch(pos){
         case 1:                                                                 ///APARTADO "NUEVO USUARIO"
-            CargarUsuario();
-            MenuUsuario();
+            //CargarEntrenamiento();
+            menuEntrenamiento();
         break;
         case 2:                                                                 ///APARTADO "MODIFICAR USUARIO"
-            ModificarUsuario();
-            MenuUsuario();
+            //Modificar entranmiento();
+            menuEntrenamiento();
         break;
         case 3:                                                                 ///APARTADO "LISTAR USUARIO POR ID"
-            ListarId();
-            MenuUsuario();
+            //ListarIdEntrenamiento();
+            menuEntrenamiento();
         break;
         case 4:                                                                 ///APARTADO "LISTAR USUARIOS"
-            ListarUsuarios();
-            MenuUsuario();
+            //Listarentrenamiento por IDUSUARIO();
+            menuEntrenamiento();
         break;
         case 5:                                                                 ///APARTADO "ELIMINAR USUARIOS"
-            BajaUsuario();
-            MenuUsuario();
+            //listar Todos Los Entrenamientos();
+            menuEntrenamiento();
         break;
         case 6:                                                                 ///APARTADO "VOLVER"
             MenuPrincipal();
