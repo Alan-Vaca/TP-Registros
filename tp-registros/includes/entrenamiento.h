@@ -351,7 +351,7 @@ int fechasEnt(int dd, int mm, int aa){                                  //ESTA F
     return opcion;
 }
 
-bool guardarEntrenamiento(entrenamiento ent){                                             //FUNCION GUARDAR USUARIO
+bool guardarEntrenamiento(entrenamiento ent){                           //FUNCION GUARDAR USUARIO
     bool grabo;
     FILE *f;
     f = fopen("entrenamientosC.dat","ab");                                            ///CREARA UN ARCHIVO
@@ -360,5 +360,48 @@ bool guardarEntrenamiento(entrenamiento ent){                                   
     }
     fwrite(&ent, sizeof(entrenamiento),1,f);                                         ///ESCRIBIRA EL STRUCT "USUARIO" EN EL ARCHIVO
     fclose(f);
+}
+
+void mostrarEntrenamiento(entrenamiento ent){                                      //MOSTRAR USUARIOS
+    SetConsoleTextAttribute(hConsole, 7);
+    cout << "\t \t \t \t ================================" << endl;
+    cout << "\t \t \t \t ID ENTRENAMIENTO: "        << ent.idEntrenamiento << endl;               ///ID
+    cout << "\t \t \t \t ID USUARIO: "              << ent.IDUsuario << endl;                     ///NOMBRE
+    cout << "\t \t \t \t FECHA DE ENTRENAMIENTO: "  << ent.fechadeEntranmiento << endl;           ///APELLIDO
+
+    if(ent.actividad == 1){                                                ///APTO MEDICO
+        cout << "\t \t \t \t ACTIVIDAD: CAMINATA" << endl;
+    }
+    else if(ent.actividad == 2){
+        cout << "\t \t \t \t ACTIVIDAD: CORRER" << endl;
+    }
+    else if(ent.actividad == 3){                                                    ///ESTADO
+        cout << "\t \t \t \t ACTIVIDAD: BICICLETA"  << endl;
+    }
+    else if(ent.actividad == 4){                                                    ///ESTADO
+        cout << "\t \t \t \t ACTIVIDAD: NATACION"  << endl;
+    }
+    else {                                                    ///ESTADO
+        cout << "\t \t \t \t ACTIVIDAD: PESAS"  << endl;
+    }
+    cout << "\t \t \t \t CALORIAS: "                << ent.calorias << endl;
+    cout << "\t \t \t \t TIEMPO: "                  << ent.tiempo << endl;
+    cout << "\t \t \t \t ================================" << endl << endl;
+}
+
+void listarEntrenamiento(){                                                  //FUNCION LISTAR USUARIO
+    system("cls");
+    entrenamiento ent;
+    FILE * f;
+    f = fopen("entrenamientosC.dat","rb");                                            ///LEERA EL ARCHIVO CREADO
+    if(f == NULL){                                                              ///EN CASO DE QUE NO CONTEGA DATOS
+        return;
+    }
+    while(fread(&ent, sizeof(entrenamiento),1,f)){                                   ///EN CASO DE QUE TENGA DATOS, LEERA DE A UNO
+         mostrarEntrenamiento(ent);
+    }
+    fclose(f);
+    system("pause");
+    menuEntrenamiento();                                                              ///VUELVE AL MENU USUARIO
 }
 #endif // ENTRENAMIENTO_H_INCLUDED

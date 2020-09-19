@@ -50,6 +50,8 @@ void cargaEntrenamiento();
 int autonumerico();
 int fechasEnt(int dd, int mm, int aa);
 bool guardarEntrenamiento(entrenamiento);
+void listarEntrenamiento();
+void mostrarEntrenamiento(entrenamiento);
 
 
 #endif // PROTOTIPOS_H_INCLUDED

@@ -306,7 +306,7 @@ void menuEntrenamiento(){                                                       
             menuEntrenamiento();
         break;
         case 5:                                                                 ///APARTADO "ELIMINAR USUARIOS"
-            //listar Todos Los Entrenamientos();
+            listarEntrenamiento();
             menuEntrenamiento();
         break;
         case 6:                                                                 ///APARTADO "VOLVER"
