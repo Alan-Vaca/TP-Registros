@@ -290,7 +290,7 @@ void menuEntrenamiento(){                                                       
     case 13: //ENTER
         switch(pos){
         case 1:                                                                 ///APARTADO "NUEVO USUARIO"
-            //CargarEntrenamiento();
+            Cargarentrenamiento();
             menuEntrenamiento();
         break;
         case 2:                                                                 ///APARTADO "MODIFICAR USUARIO"

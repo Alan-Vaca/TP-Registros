@@ -2,41 +2,43 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="includes\visuales.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="includes\prototipos.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="367" topLine="0" />
+			<Cursor1 position="2511" topLine="36" />
 		</Cursor>
-		<Folding>
-			<Collapse line="10" />
-			<Collapse line="16" />
-		</Folding>
 	</File>
 	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="792" topLine="2" />
+			<Cursor1 position="857" topLine="9" />
 		</Cursor>
-	</File>
-	<File name="includes\entrenamiento.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="8071" topLine="201" />
-		</Cursor>
-		<Folding>
-			<Collapse line="234" />
-		</Folding>
 	</File>
 	<File name="includes\usuarios.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="28121" topLine="699" />
+			<Cursor1 position="650" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="includes\menues.h" open="1" top="1" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="includes\entrenamiento.h" open="1" top="1" tabpos="5" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="9325" topLine="199" />
+			<Cursor1 position="5325" topLine="137" />
+		</Cursor>
+		<Folding>
+			<Collapse line="234" />
+			<Collapse line="250" />
+			<Collapse line="353" />
+		</Folding>
+	</File>
+	<File name="includes\visuales.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="58" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="includes\prototipos.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
+	<File name="includes\menues.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="254" topLine="0" />
+			<Cursor1 position="12340" topLine="15" />
 		</Cursor>
+		<Folding>
+			<Collapse line="3" />
+			<Collapse line="119" />
+		</Folding>
 	</File>
 </CodeBlocks_layout_file>

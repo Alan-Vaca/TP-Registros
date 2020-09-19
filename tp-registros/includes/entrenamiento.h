@@ -121,7 +121,7 @@ entrenamiento Cargarentrenamiento(){
             SetConsoleTextAttribute(hConsole, 2);
             gotoxy(29,20); cout << "HABILITADO";
             SetConsoleTextAttribute(hConsole, 7);
-            //ShowConsoleCursor(true);
+            ShowConsoleCursor(true);
             gotoxy(53,24); cin >> ent.calorias;
             gotoxy(53,27); cin >> ent.tiempo;
             guardarEntrenamiento(ent);
@@ -131,7 +131,7 @@ entrenamiento Cargarentrenamiento(){
             SetConsoleTextAttribute(hConsole, 2);
             gotoxy(29,20); cout << "HABILITADO";
             SetConsoleTextAttribute(hConsole, 7);
-            //ShowConsoleCursor(true);
+            ShowConsoleCursor(true);
             gotoxy(53,24); cin >> ent.calorias;
             gotoxy(53,27); cin >> ent.tiempo;
             guardarEntrenamiento(ent);
@@ -141,7 +141,7 @@ entrenamiento Cargarentrenamiento(){
             SetConsoleTextAttribute(hConsole, 2);
             gotoxy(29,20); cout << "HABILITADO";
             SetConsoleTextAttribute(hConsole, 7);
-            //ShowConsoleCursor(true);
+            ShowConsoleCursor(true);
             gotoxy(53,24); cin >> ent.calorias;
             gotoxy(53,27); cin >> ent.tiempo;
             guardarEntrenamiento(ent);
@@ -156,10 +156,10 @@ entrenamiento Cargarentrenamiento(){
             SetConsoleTextAttribute(hConsole, 2);
             gotoxy(29,20); cout << "CUMPLE APTO MEDICO";
             SetConsoleTextAttribute(hConsole, 7);
-            //ShowConsoleCursor(true);
             gotoxy(53,24); cin >> ent.calorias;
             gotoxy(53,27); cin >> ent.tiempo;
             guardarEntrenamiento(ent);
+            ShowConsoleCursor(true);
             }
             else{
             SetConsoleTextAttribute(hConsole, 12);
@@ -176,10 +176,10 @@ entrenamiento Cargarentrenamiento(){
             SetConsoleTextAttribute(hConsole, 2);
             gotoxy(29,20); cout << "CUMPLE APTO MEDICO";
             SetConsoleTextAttribute(hConsole, 7);
-            //ShowConsoleCursor(true);
             gotoxy(53,24); cin >> ent.calorias;
             gotoxy(53,27); cin >> ent.tiempo;
             guardarEntrenamiento(ent);
+            ShowConsoleCursor(true);
             }
             else{
             SetConsoleTextAttribute(hConsole, 12);

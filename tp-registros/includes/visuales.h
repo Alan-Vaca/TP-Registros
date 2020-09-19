@@ -8,6 +8,7 @@ void ShowConsoleCursor(bool showFlag){                                          
     cursorInfo.bVisible = showFlag;
     SetConsoleCursorInfo(out, &cursorInfo);
 }
+
 void gotoxy(short x, short y){                                                  //DECLARACION DEL GOTOXY
     COORD a;
     a.X = x;

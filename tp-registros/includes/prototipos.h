@@ -1,9 +1,10 @@
 #ifndef PROTOTIPOS_H_INCLUDED
 #define PROTOTIPOS_H_INCLUDED
 
+void ShowConsoleCursor();
 void gotoxy();                                                                  ///GOTOXY
 void recuadro();                                                                ///CREA RECUADROS
-void ShowConsoleCursor();                                                       ///VISUALIZACION DEL CURSOR
+                                                      ///VISUALIZACION DEL CURSOR
 
 
 void MenuPrincipal();                                                           ///MENU PRINCIPAL
@@ -48,7 +49,7 @@ entrenamiento Cargarentrenamiento();
 void cargaEntrenamiento();
 int autonumerico();
 int fechasEnt(int dd, int mm, int aa);
-bool guardarEntrenamiento(entrenamiento)
+bool guardarEntrenamiento(entrenamiento);
 
 
 #endif // PROTOTIPOS_H_INCLUDED
