@@ -1,19 +1,20 @@
 #ifndef VISUALES_H_INCLUDED
 #define VISUALES_H_INCLUDED
 
-void ShowConsoleCursor(bool showFlag){                                          //MOSTRARA DONDE SE ENCUENTRA EL CURSOR EN LA CONSOLA
-    HANDLE out = GetStdHandle(STD_OUTPUT_HANDLE);
-    CONSOLE_CURSOR_INFO     cursorInfo;
-    GetConsoleCursorInfo(out, &cursorInfo);
-    cursorInfo.bVisible = showFlag;
-    SetConsoleCursorInfo(out, &cursorInfo);
-}
+///FUNCIONES VISUALES
 
 void gotoxy(short x, short y){                                                  //DECLARACION DEL GOTOXY
     COORD a;
     a.X = x;
     a.Y = y;
     SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),a);
+}
+void ShowConsoleCursor(bool showFlag){                                          //MOSTRARA DONDE SE ENCUENTRA EL CURSOR EN LA CONSOLA
+    HANDLE out = GetStdHandle(STD_OUTPUT_HANDLE);
+    CONSOLE_CURSOR_INFO     cursorInfo;
+    GetConsoleCursorInfo(out, &cursorInfo);
+    cursorInfo.bVisible = showFlag;
+    SetConsoleCursorInfo(out, &cursorInfo);
 }
 void recuadro(short iniX, short iniY, short ancho, short alto){                 //CON ESTA FUNCION NOS PERMITIRA CREAR UN RECUADRO
     int i, j;

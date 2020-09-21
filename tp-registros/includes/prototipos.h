@@ -1,39 +1,39 @@
 #ifndef PROTOTIPOS_H_INCLUDED
 #define PROTOTIPOS_H_INCLUDED
 
+void gotoxy();
+void recuadro();
 void ShowConsoleCursor();
-void gotoxy();                                                                  ///GOTOXY
-void recuadro();                                                                ///CREA RECUADROS
-                                                      ///VISUALIZACION DEL CURSOR
 
-
-void MenuPrincipal();                                                           ///MENU PRINCIPAL
 void MenuUsuario();
+void MenuPrincipal();
 void menuEntrenamiento ();
 
- struct Usuario{                                                                ///ESTRUCTURA DE LOS USUARIOS
-    int     Id;                                                                 ///DEBE SER UN NUMERO ENTERO POSITIVO Y UNICO (NO PUEDE REPETIRSE)
-    char    Nombre[50];                                                         ///DEBE SER UNA CADENA QUE ADMITA ESPACIOS, QUE NO PUEDA SER VACIA
-    char    Apellido[50];                                                       ///DEBE SER UNA CADENA QUE ADMITA ESPACIOS, QUE NO PUEDA SER VACIA
-    int     FechaNac;                                                           ///DEBE SER UNA FECHA VALIDA (EL USUARIO DEBE TENER MAYOR A 13 AÑOS)
-    float   Altura;                                                             ///ES UN NUMERO REAL QUE NO PUEDE SER NEGATIVO
-    float   Peso;                                                               ///ES UN NUMERO REAL QUE NO PUEDE SER NEGATIVO
-    char    PerfilAct;                                                          ///DEBE SER DE CARACTER 'A'-'B'-'C' (PUEDE SER TAMBIEN EN MINUSCULAS)
-    bool    AptoMedico;                                                         ///DEBE SER NUMEROS ENTEROS 1 o 0;
-    bool    Estado;                                                             ///DENE SER VALOR BOOBEANO, (CUANDO SE CARGUE UN USUARIO DEBE SER TRUE)
+ struct Usuario{
+    int     Id;
+    char    Nombre[50];
+    char    Apellido[50];
+    int     FechaNac;
+    float   Altura;
+    float   Peso;
+    char    PerfilAct;
+    bool    AptoMedico;
+    bool    Estado;
 };
+
 Usuario CargarUsuario();
 void CargaUsuario();
-int  Fechasverificador();
 bool GuardarUsuarios(Usuario);
 
-void ModificarUsuario();
 void BajaUsuario();
+void ModificarUsuario();
 
-void ListarUsuarios();
-int  BuscarId();
 void ListarId();
+void ListarUsuarios();
 void MostrarUsuario (Usuario);
+
+int  BuscarId(int cod);
+int  Fechasverificador(int dd, int mm, int aa);
 
 
 struct entrenamiento{
@@ -47,11 +47,18 @@ struct entrenamiento{
 
 entrenamiento Cargarentrenamiento();
 void cargaEntrenamiento();
-int autonumerico();
-int fechasEnt(int dd, int mm, int aa);
 bool guardarEntrenamiento(entrenamiento);
+
+void modificarEntrenamiento();
+
 void listarEntrenamiento();
+void listarIdEntrenamiento();
+void listarEntrenamientoXusuario();
 void mostrarEntrenamiento(entrenamiento);
 
+int autonumerico();
+int BuscarXentrenamiento(int id);
+int buscarIdEntrenamiento(int cod);
+int fechasEnt(int dd, int mm, int aa);
 
 #endif // PROTOTIPOS_H_INCLUDED

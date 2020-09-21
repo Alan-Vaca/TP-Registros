@@ -6,24 +6,20 @@
 #include <cstring>
 #include <cstdio>
 #include <ctime>
-#include <windows.h>
 
-HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);                              ///FUNCION PARA PINTAR
+HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 using namespace std;
 #include "includes/prototipos.h"
 #include "includes/visuales.h"
 #include "includes/menues.h"
 #include "includes/usuarios.h"
 #include "includes/entrenamiento.h"
-                                                                ///LISTARA LA ID DEL USUARIO
-
 
 int main(){
-    /*ShowConsoleCursor(false);                                                               //MAIN PRINCIPAL
+    ShowConsoleCursor(false);
     SetConsoleTextAttribute(hConsole, 6);
     recuadro(26,10,46,21);
     SetConsoleTextAttribute(hConsole, 7);
-    MenuPrincipal();*/
     MenuPrincipal();
     return 0;
 }
