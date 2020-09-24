@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="Debug" />
+	<File name="includes\usuarios.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="8295" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="6" />
+			<Collapse line="199" />
+			<Collapse line="226" />
+			<Collapse line="363" />
+			<Collapse line="490" />
+			<Collapse line="526" />
+			<Collapse line="541" />
+			<Collapse line="567" />
+			<Collapse line="627" />
+		</Folding>
+	</File>
+	<File name="includes\configuracion.h" open="1" top="1" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5457" topLine="159" />
+		</Cursor>
+	</File>
+	<File name="includes\entrenamiento.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="23198" topLine="588" />
+		</Cursor>
+		<Folding>
+			<Collapse line="241" />
+			<Collapse line="611" />
+			<Collapse line="623" />
+			<Collapse line="637" />
+			<Collapse line="651" />
+			<Collapse line="659" />
+			<Collapse line="738" />
+			<Collapse line="741" />
+			<Collapse line="744" />
+			<Collapse line="747" />
+		</Folding>
+	</File>
+	<File name="includes\menues.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5797" topLine="15" />
+		</Cursor>
+		<Folding>
+			<Collapse line="5" />
+			<Collapse line="275" />
+			<Collapse line="428" />
+		</Folding>
+	</File>
+	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="159" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="includes\visuales.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1793" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="5" />
+			<Collapse line="11" />
+			<Collapse line="18" />
+		</Folding>
+	</File>
+	<File name="includes\prototipos.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1390" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="12" />
+			<Collapse line="39" />
+		</Folding>
+	</File>
+</CodeBlocks_layout_file>
